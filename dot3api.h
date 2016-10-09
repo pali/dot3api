@@ -43,7 +43,11 @@ DWORD WINAPI Dot3OpenHandle(DWORD dwClientVersion, PVOID pReserved, PDWORD pdwNe
 /*
 Dot3QueryGUIDNCSState@8
 Dot3QueryUIRequest@12
-Dot3ReConnect@12
+*/
+
+DWORD WINAPI Dot3ReConnect(HANDLE hClientHandle, const GUID *pInterfaceGuid, PVOID pReserved);
+
+/*
 Dot3RegisterNotification@32
 Dot3SetInterface@24
 */
